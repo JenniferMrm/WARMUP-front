@@ -1,7 +1,7 @@
 import React from "react";
 
-function Register(props) {
+function Header(props) {
   return <div></div>;
 }
 
-export default Register;
+export default Header;
