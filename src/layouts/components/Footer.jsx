@@ -1,7 +1,7 @@
 import React from "react";
 
-function Register(props) {
+function Footer(props) {
   return <div></div>;
 }
 
-export default Register;
+export default Footer;
