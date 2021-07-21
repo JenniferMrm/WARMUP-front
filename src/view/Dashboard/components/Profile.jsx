@@ -3,10 +3,15 @@ import { createUseStyles } from "react-jss";
 
 const useStyles = createUseStyles({
   profileContainer: {
+    display: "flex",
+    flexDirection: "column",
+  },
+
+  profileInfos: {
     border: "solid 1px black",
     display: "flex",
-    height: "200px",
-    width: "300px",
+    height: "300px",
+    width: "400px",
     flexDirection: "column",
     justifyContent: "start",
     padding: "10px",
@@ -27,6 +32,10 @@ const useStyles = createUseStyles({
     width: "100px",
     borderRadius: "100%",
   },
+
+  title: {
+    fontSize: "30px",
+  },
 });
 
 function Profile() {
@@ -34,16 +43,19 @@ function Profile() {
 
   return (
     <div className={classes.profileContainer}>
-      <div className={classes.avatarAndNameContainer}>
-        <img
-          src="https://source.unsplash.com/0fJKvGUDztg"
-          alt="avatar"
-          className={classes.avatar}
-        />
-        <p className={classes.name}>Name</p>
+      <h2 className={classes.title}>DASHBOARD</h2>
+      <div className={classes.profileInfos}>
+        <div className={classes.avatarAndNameContainer}>
+          <img
+            src="https://source.unsplash.com/0fJKvGUDztg/800x800"
+            alt="avatar"
+            className={classes.avatar}
+          />
+          <p className={classes.name}>Name</p>
+        </div>
+        <p>Plays bass for 2 months</p>
+        <p>Total training time :</p>
       </div>
-      <p>Plays bass for 2 months</p>
-      <p>Total training time :</p>
     </div>
   );
 }
