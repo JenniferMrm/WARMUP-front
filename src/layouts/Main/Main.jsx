@@ -3,7 +3,18 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { createUseStyles } from "react-jss";
 
-const useStyles = createUseStyles({});
+const useStyles = createUseStyles({
+  "@global": {
+    body: {
+      height: "100vh",
+      margin: 0,
+      overflowX: "hidden",
+    },
+  },
+  mainContainer: {
+    width: "100%",
+  },
+});
 
 function Main(props) {
   const classes = useStyles();
