@@ -1,7 +1,7 @@
 import React from "react";
 
-function Dashboard() {
+function Training(props) {
   return <div></div>;
 }
 
-export default Dashboard;
+export default Training;
