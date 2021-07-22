@@ -7,13 +7,17 @@ const useStyles = createUseStyles({
   },
 });
 
-function Button({ text, padding, fontSize }) {
+function Button({ text, padding, fontSize, backgroundColor }) {
   const classes = useStyles();
   return (
     <div>
       <button
         className={classes.button}
-        style={{ padding: padding, fontSize: fontSize }}
+        style={{
+          padding: padding,
+          fontSize: fontSize,
+          backgroundColor: backgroundColor,
+        }}
       >
         {text}
       </button>

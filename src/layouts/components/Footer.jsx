@@ -8,6 +8,8 @@ const useStyles = createUseStyles({
     justifyContent: "center",
     width: "100%",
     position: "fixed",
+    height: "50px",
+    borderTop: "1px solid black",
     bottom: 0,
   },
 

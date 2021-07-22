@@ -5,16 +5,21 @@ const useStyles = createUseStyles({
   profileContainer: {
     display: "flex",
     flexDirection: "column",
+    height: "calc(100vh - 150px)",
+    justifyContent: "space-around",
+    alignItems: "start",
+    marginLeft: "50px",
   },
 
   profileInfos: {
     border: "solid 1px black",
     display: "flex",
     height: "300px",
-    width: "400px",
+    width: "500px",
     flexDirection: "column",
     justifyContent: "start",
     padding: "10px",
+    marginBottom: "100px",
   },
 
   avatarAndNameContainer: {
@@ -35,10 +40,11 @@ const useStyles = createUseStyles({
 
   title: {
     fontSize: "30px",
+    marginTop: "120px",
   },
 });
 
-function Profile() {
+function Profile({ name, instrument, experience, training_time, src }) {
   const classes = useStyles();
 
   return (
@@ -46,15 +52,13 @@ function Profile() {
       <h2 className={classes.title}>DASHBOARD</h2>
       <div className={classes.profileInfos}>
         <div className={classes.avatarAndNameContainer}>
-          <img
-            src="https://source.unsplash.com/0fJKvGUDztg/800x800"
-            alt="avatar"
-            className={classes.avatar}
-          />
-          <p className={classes.name}>Name</p>
+          <img src={src} alt="avatar" className={classes.avatar} />
+          <p className={classes.name}>{name}</p>
         </div>
-        <p>Plays bass for 2 months</p>
-        <p>Total training time :</p>
+        <p>
+          Plays {instrument} for {experience}.
+        </p>
+        <p>Total training time : {training_time}</p>
       </div>
     </div>
   );

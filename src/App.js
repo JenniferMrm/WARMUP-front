@@ -40,10 +40,10 @@ function App() {
         />
         <Route
           exact
-          path="/training"
-          render={() => (
+          path="/training/:id"
+          render={(matchProps) => (
             <Main>
-              <Training />
+              <Training {...matchProps} />
             </Main>
           )}
         />
