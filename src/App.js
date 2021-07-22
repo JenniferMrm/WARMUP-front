@@ -6,6 +6,7 @@ import Register from "./view/Register/Register";
 import Dashboard from "./view/Dashboard/Dashboard";
 import Training from "./view/Training/Training";
 import CreateTraining from "./view/CreateTraining/CreateTraining";
+import Minimal from "./layouts/Minimal/Minimal";
 
 function App() {
   return (
@@ -15,18 +16,18 @@ function App() {
           exact
           path="/login"
           render={() => (
-            <Main>
+            <Minimal>
               <Login />
-            </Main>
+            </Minimal>
           )}
         />
         <Route
           exact
           path="/register"
           render={() => (
-            <Main>
+            <Minimal>
               <Register />
-            </Main>
+            </Minimal>
           )}
         />
         <Route

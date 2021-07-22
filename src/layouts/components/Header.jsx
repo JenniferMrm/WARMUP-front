@@ -33,11 +33,7 @@ function Header() {
   const history = useHistory();
 
   const redirectToDashboard = () => {
-    if (window.location.pathname === "/login") {
-      history.push("/login");
-    } else {
-      history.push("/");
-    }
+    history.push("/");
   };
 
   const disconnect = () => {
@@ -46,7 +42,7 @@ function Header() {
   return (
     <div className={classes.headerContainer}>
       <div onClick={redirectToDashboard}>
-        <h2 className={classes.title}>WARM UP</h2>
+        <h2 className={classes.title}>WARM-UP</h2>
       </div>
       <div className={classes.button}>
         <div onClick={disconnect}>

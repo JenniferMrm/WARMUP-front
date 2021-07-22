@@ -20,7 +20,7 @@ function Footer() {
   const classes = useStyles();
   return (
     <div className={classes.footerContainer}>
-      <p className={classes.copyright}>WARM UP 2021 - All rights reserved</p>
+      <p className={classes.copyright}>© WARM-UP 2021 - All rights reserved</p>
     </div>
   );
 }

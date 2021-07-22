@@ -1,7 +1,6 @@
 import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import { createUseStyles } from "react-jss";
+import Footer from "../components/Footer";
 
 const useStyles = createUseStyles({
   "@global": {
@@ -11,22 +10,21 @@ const useStyles = createUseStyles({
       overflowX: "hidden",
     },
   },
-  mainContainer: {
+  minimalContainer: {
     width: "100%",
   },
 });
 
-function Main(props) {
+function Minimal(props) {
   const classes = useStyles();
   const { children } = props;
 
   return (
-    <div className={classes.mainContainer}>
-      <Header />
+    <div className={classes.minimal}>
       {children}
       <Footer />
     </div>
   );
 }
 
-export default Main;
+export default Minimal;
