@@ -11,6 +11,9 @@ const useStyles = createUseStyles({
     justifyContent: "space-between",
     alignItems: "center",
     padding: "0 40px 0 10px",
+    "&:hover": {
+      cursor: "pointer",
+    },
   },
 });
 

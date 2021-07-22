@@ -32,7 +32,6 @@ function Dashboard() {
 
   const handleClick = (training) => {
     setTrainingsInfos(training);
-    console.log(training);
   };
 
   useEffect(() => {

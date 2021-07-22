@@ -1,17 +1,21 @@
+import axios from "axios";
 import React, { useState } from "react";
 import { createUseStyles } from "react-jss";
+import { useHistory } from "react-router-dom";
+import Button from "../../common/Button";
 import AvatarList from "./components/AvatarList";
 
 const useStyles = createUseStyles({
   registerContainer: {
     width: "100%",
     height: "calc(100vh - 150px)",
+    overflow: "hidden",
   },
 
   title: {
     fontSize: "40px",
     textAlign: "center",
-    margin: "100px 0",
+    margin: "150px 0",
   },
 
   formContainer: {
@@ -58,20 +62,43 @@ const useStyles = createUseStyles({
     fontSize: "18px",
     marginRight: "20px",
   },
+
+  button: {
+    width: "90%",
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "end",
+  },
 });
 
 function Register() {
   const classes = useStyles();
+  const [avatarId, setAvatarId] = useState([]);
+  const history = useHistory();
   const [form, setForm] = useState({
     name: "",
     password: "",
     instrument: "",
     experience: "",
-    avatar: "",
+    avatar: { avatarId },
   });
+
+  const redirectToLogin = () => {
+    history.push("/login");
+  };
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleClick = async (e) => {
+    e.preventDefault();
+    await axios.post(
+      `${process.env.REACT_APP_WARMUP_BACK_URL}/api/users`,
+      form
+    );
+    redirectToLogin();
+    console.log(avatarId);
   };
 
   return (
@@ -129,7 +156,12 @@ function Register() {
             ></input>
           </div>
         </div>
-        <AvatarList />
+        <AvatarList setAvatarId={setAvatarId} />
+      </div>
+      <div className={classes.button}>
+        <div onClick={handleClick}>
+          <Button text={"Done !"} fontSize={"20px"} onClick={handleClick} />
+        </div>
       </div>
     </div>
   );

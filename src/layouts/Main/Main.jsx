@@ -9,6 +9,12 @@ const useStyles = createUseStyles({
       height: "100vh",
       margin: 0,
       overflowX: "hidden",
+      fontFamily: "Quicksand",
+      background:
+        "linear-gradient(50deg, rgba(20,0,68,1) 0%, rgba(214,247,255,1) 100%)",
+      fallbacks: {
+        background: "white",
+      },
     },
   },
   mainContainer: {

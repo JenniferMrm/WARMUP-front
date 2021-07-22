@@ -15,13 +15,13 @@ function Buttons({ ...trainingsInfos }) {
             <Button
               text={"START TRAINING !"}
               fontSize={"20px"}
-              backgroundColor={"lightblue"}
+              backgroundColor={"#feb0f6"}
             />
           </Link>
         </div>
       ) : (
         <div className={classes.buttonNope}>
-          <Button text={"START TRAINING !"} fontSize={"20px"} />
+          <Button text={"START TRAINING !"} fontSize={"20px"} color={"grey"} />
         </div>
       )}
     </div>

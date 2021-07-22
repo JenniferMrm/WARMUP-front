@@ -8,6 +8,7 @@ const useStyles = createUseStyles({
       height: "100vh",
       margin: 0,
       overflowX: "hidden",
+      fontFamily: "Quicksand",
     },
   },
   minimalContainer: {

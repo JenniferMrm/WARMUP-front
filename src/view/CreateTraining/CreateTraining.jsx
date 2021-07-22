@@ -44,6 +44,7 @@ const useStyles = createUseStyles({
     width: "100%",
     textAlign: "center",
     marginTop: "20px",
+    fontSize: "40px",
   },
   button: {
     width: "95%",

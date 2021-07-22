@@ -6,7 +6,6 @@ import Button from "../../common/Button";
 
 const useStyles = createUseStyles({
   trainingContainer: {
-    border: "1px solid black",
     width: "70%",
     margin: "0 auto",
     height: "calc(100vh - 150px)",
@@ -17,6 +16,7 @@ const useStyles = createUseStyles({
   },
   title: {
     marginBottom: "50px",
+    fontSize: "40px",
   },
   description: {
     marginBottom: "50px",
@@ -33,12 +33,26 @@ function Training({ match }) {
   const classes = useStyles();
   const [training, setTraining] = useState([]);
   const history = useHistory();
+  // // const [trainingTime, setTrainingTime] = useState({});
+  // const [counter, setCounter] = useState(trainingTime);
 
   const redirectToDashboard = () => {
-    console.log("je suis fatiguée");
     history.push("/");
   };
 
+  // Update the training_time of the user (unfortunately not working by lack of time)
+
+  // const handleClick = async () => {
+  //   try {
+  //     await axios.patch(
+  //       `${process.env.REACT_APP_LABELIT_BACK_URL}/api/users/${trainingTime}`
+  //     );
+  //     // setTrainingTime(counter);
+  //     redirectToDashboard();
+  //   } catch (e) {}
+  // };
+
+  // Get the training by the id
   useEffect(() => {
     const getTraining = () => {
       try {
@@ -56,6 +70,33 @@ function Training({ match }) {
     };
     getTraining();
   }, [match?.params?.id]);
+
+  // Get the connected user
+  // useEffect(() => {
+  //   const getTrainingTime = () => {
+  //     try {
+  //       axios
+  //         .get(`${process.env.REACT_APP_WARMUP_BACK_URL}/api/users/1`)
+  //         .then((response) => response.data)
+  //         .then((data) => {
+  //           setTrainingTime(data[0][trainingTime.training_time]);
+  //         });
+  //     } catch (e) {
+  //       //err
+  //     }
+  //   };
+  //   getTrainingTime();
+  // }, []);
+
+  // Incrementing the counter while the training is going
+
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setCounter(counter + 1);
+  //   }, 1000);
+  // }, [counter]);
+
+  // console.log(counter);
 
   return (
     <div className={classes.trainingContainer}>

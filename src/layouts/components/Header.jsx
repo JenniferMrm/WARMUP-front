@@ -9,10 +9,14 @@ const useStyles = createUseStyles({
     height: "100px",
     margin: 0,
     width: "100%",
-    border: "1px solid black",
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
+    background:
+      "linear-gradient(223deg, rgba(68,0,61,1) 0%, rgba(214,240,255,1) 100%)",
+    fallbacks: {
+      background: "white",
+    },
   },
 
   title: {

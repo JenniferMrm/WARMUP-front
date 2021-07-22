@@ -18,9 +18,9 @@ const useStyles = createUseStyles({
   listContainer: {
     width: "765px",
     height: "350px",
-    border: "solid 1px black",
     overflowY: "scroll",
     overflowX: "hidden",
+    background: "#d6f0ff",
   },
 
   createButton: {

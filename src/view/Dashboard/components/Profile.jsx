@@ -12,13 +12,13 @@ const useStyles = createUseStyles({
   },
 
   profileInfos: {
-    border: "solid 1px black",
+    background: "#d6f0ff",
     display: "flex",
     height: "300px",
     width: "500px",
     flexDirection: "column",
     justifyContent: "start",
-    padding: "10px",
+    padding: "30px",
     marginBottom: "100px",
   },
 
@@ -31,6 +31,7 @@ const useStyles = createUseStyles({
 
   name: {
     marginLeft: "100px",
+    fontSize: "40px",
   },
 
   avatar: {
@@ -39,8 +40,12 @@ const useStyles = createUseStyles({
   },
 
   title: {
-    fontSize: "30px",
+    fontSize: "50px",
     marginTop: "120px",
+  },
+
+  text: {
+    fontSize: "20px",
   },
 });
 
@@ -55,10 +60,10 @@ function Profile({ name, instrument, experience, training_time, src }) {
           <img src={src} alt="avatar" className={classes.avatar} />
           <p className={classes.name}>{name}</p>
         </div>
-        <p>
+        <p className={classes.text}>
           Plays {instrument} for {experience}.
         </p>
-        <p>Total training time : {training_time}</p>
+        <p className={classes.text}>Total training time : {training_time}</p>
       </div>
     </div>
   );
