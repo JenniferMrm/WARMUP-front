@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import TrainTitle from "./TrainTitle";
 import { createUseStyles } from "react-jss";
 import Button from "../../../common/Button";
+import { Link } from "react-router-dom";
 
 const useStyles = createUseStyles({
   trainingListContainer: {
@@ -50,7 +51,9 @@ function TrainingList({ onClick }) {
   return (
     <div className={classes.trainingListContainer}>
       <div className={classes.createButton}>
-        <Button text={"CREATE A NEW TRAINING"} fontSize={"20px"} />
+        <Link to={"/createTraining/"}>
+          <Button text={"CREATE A NEW TRAINING"} fontSize={"20px"} />
+        </Link>
       </div>
       <div className={classes.listContainer}>
         {trainings.map((training, index) => (

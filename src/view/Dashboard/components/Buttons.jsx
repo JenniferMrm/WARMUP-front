@@ -3,12 +3,7 @@ import { createUseStyles } from "react-jss";
 import { Link } from "react-router-dom";
 import Button from "../../../common/Button";
 
-const useStyles = createUseStyles({
-  link: {
-    color: "inherit",
-    textDecoration: "none",
-  },
-});
+const useStyles = createUseStyles({});
 
 function Buttons({ ...trainingsInfos }) {
   const classes = useStyles();
@@ -16,7 +11,7 @@ function Buttons({ ...trainingsInfos }) {
     <div>
       {trainingsInfos.title ? (
         <div className={classes.buttonGo}>
-          <Link to={"/training/" + trainingsInfos.id} className={classes.link}>
+          <Link to={"/training/" + trainingsInfos.id}>
             <Button
               text={"START TRAINING !"}
               fontSize={"20px"}

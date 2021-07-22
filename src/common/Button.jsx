@@ -4,6 +4,9 @@ const useStyles = createUseStyles({
   button: {
     border: "none",
     padding: "20px 30px",
+    "&:hover": {
+      cursor: "pointer",
+    },
   },
 });
 
