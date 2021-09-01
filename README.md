@@ -6,15 +6,15 @@ Les fichiers illustrant la conception du projet sont localisés dans le dossier 
 
 Afin de consulter le projet sur votre environnement local :
 
---> Récupéré ce projet sur votre ordinateur.
+--> Clonez ce projet sur votre ordinateur.
 
---> Lancer un npm install dès sa première ouverture.
+--> Lancez un npm install dès sa première ouverture.
 
---> Recréer un fichier .env et rentrer-y vos variables d'environnement.
+--> Recréez un fichier .env et rentrer-y vos variables d'environnement.
 
 --> La base de données peut être facilement intégrée à vos logiciels mysql via le ficher create-db.sql présent dans le dossier DB du back-end.
 
---> Un dossier populate_db.sql vous permet également de remplir la base de données. Seul le premier "INSERT INTO" est nécessaire. Pour une meilleure expérience, je vous conseil de créer votre prore compte et exercices.
+--> Un dossier populate_db.sql vous permet également de remplir la base de données. Seul le premier "INSERT INTO" est nécessaire. Pour une meilleure expérience, je vous conseil de créer votre propre compte et exercices.
 
 Have Fun !
 
