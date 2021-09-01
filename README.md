@@ -1,6 +1,6 @@
 # WARMUP - front
 
-Ceci est le repository du projet back-end réalisé lors du checkpoint final organisé par la Wild Code School dans le cadre de la formation de développeur(se) web en 5 mois. 
+Ceci est le repository du projet front-end réalisé lors du checkpoint final organisé par la Wild Code School dans le cadre de la formation de développeur(se) web en 5 mois. 
 
 Les fichiers illustrant la conception du projet sont localisés dans le dossier DB en back, et dans public/assets pour le front.
 
