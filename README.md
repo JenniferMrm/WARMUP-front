@@ -10,16 +10,16 @@ All files illustrating the research for the conception are located in the folder
 
 ## If you want to run the project localy, you can follow these steps :
 
-⋅⋅* Clone the project.
+  * Clone the project.
 
-..* Navigate at the project root and run `npm install`.
+  * Navigate at the project root and run `npm install`.
 
-..* Recreate a `.env` file and enter yours environment variables.
+  * Recreate a `.env` file and enter yours environment variables.
 
-..* The database can be easily integrated in an SQL environment with the file `create-db.sql` located in the folder `DB` in the back part.
+  * The database can be easily integrated in an SQL environment with the file `create-db.sql` located in the folder `DB` in the back part.
 
-..* A file `populate_db.sql` located in the folder `DB` in the back part allows you to fill the database with mock test datas. Only the first `INSERT INTO` is required. For a better experience, it is best to create your own account while the application is running.
+  * A file `populate_db.sql` located in the folder `DB` in the back part allows you to fill the database with mock test datas. Only the first `INSERT INTO` is required. For a better experience, it is best to create your own account while the application is running.
 
-..* Run `npm start` in the back project to launch the API.
+  * Run `npm start` in the back project to launch the API.
 
-..* Run `npm start` in the front project to launch the application.
+  * Run `npm start` in the front project to launch the application.
