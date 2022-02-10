@@ -1,21 +1,25 @@
 # WARMUP - front
 
-Ceci est le repository du projet front-end réalisé lors du checkpoint final organisé par la Wild Code School dans le cadre de la formation de développeur(se) web en 5 mois. 
+## Introduction
+Warmup is a project made during my training as part of the web developper formation at Wild Code School Bordeaux. The point was to test all the knowledges and skills I've learned for the past 5 months. I had to create a complete project (front-back-database) in 48h. This project is made with React for the front, Node.js Express for the back and the database is made with mySQL. 
+I decided to create an application that could help me while practicing bass guitar. I could create my own exercises by uploading youtube videos. The application could monitoring the time I spent exercising.
 
-Les fichiers illustrant la conception du projet sont localisés dans le dossier DB en back, et dans public/assets pour le front.
+### This is the repository for the front-end part of Warmup.
 
-Afin de consulter le projet sur votre environnement local :
+All files illustrating the research for the conception are located in the folder `DB` in the back part, and in the folder `public/assets` in the front part.
 
---> Clonez ce projet sur votre ordinateur.
+## If you want to run the project localy, you can follow these steps :
 
---> Lancez un npm install dès sa première ouverture.
+⋅⋅* Clone the project.
 
---> Recréez un fichier .env et rentrer-y vos variables d'environnement.
+..* Navigate at the project root and run `npm install`.
 
---> La base de données peut être facilement intégrée à vos logiciels mysql via le ficher create-db.sql présent dans le dossier DB du back-end.
+..* Recreate a `.env` file and enter yours environment variables.
 
---> Un dossier populate_db.sql vous permet également de remplir la base de données. Seul le premier "INSERT INTO" est nécessaire. Pour une meilleure expérience, je vous conseil de créer votre propre compte et exercices.
+..* The database can be easily integrated in an SQL environment with the file `create-db.sql` located in the folder `DB` in the back part.
 
-Have Fun !
+..* A file `populate_db.sql` located in the folder `DB` in the back part allows you to fill the database with mock test datas. Only the first `INSERT INTO` is required. For a better experience, it is best to create your own account while the application is running.
 
-(Réalisé en 48h pour le checkpoint, projet non aboutit à 100% )
+..* Run `npm start` in the back project to launch the API.
+
+..* Run `npm start` in the front project to launch the application.
